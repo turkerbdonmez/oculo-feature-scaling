@@ -1,0 +1,132 @@
+{
+  "intervals": [
+    {
+      "budget": 32,
+      "view": "oculo",
+      "model": "direct_probability",
+      "reference": null,
+      "auroc": 0.978110599078341,
+      "ci_95": [
+        0.9625288018433176,
+        0.9906736888303707
+      ],
+      "probability_auroc": 0.978110599078341,
+      "probability_ci_95": [
+        0.9625288018433176,
+        0.9906736888303707
+      ]
+    },
+    {
+      "budget": 32,
+      "view": "oculo",
+      "model": "legacy_anchor",
+      "reference": null,
+      "auroc": 0.9776534269621827,
+      "ci_95": [
+        0.961841397849462,
+        0.9898364238168381
+      ],
+      "probability_auroc": 0.9776534269621827,
+      "probability_ci_95": [
+        0.961841397849462,
+        0.9898364238168381
+      ]
+    },
+    {
+      "budget": 32,
+      "view": "oculo",
+      "model": "source_scaled_anchor",
+      "reference": null,
+      "auroc": 0.9778948138395143,
+      "ci_95": [
+        0.9622119815668201,
+        0.9902311462219293
+      ],
+      "probability_auroc": 0.9778948138395143,
+      "probability_ci_95": [
+        0.9622119815668201,
+        0.9902311462219293
+      ]
+    },
+    {
+      "budget": 32,
+      "view": "oculo",
+      "model": "legacy_anchor",
+      "reference": "direct_probability",
+      "delta_auroc": -0.0004571721161582913,
+      "ci_95": [
+        -0.0024102113963865115,
+        0.0016129032258064516
+      ],
+      "probability_delta_auroc": -0.0004571721161582913,
+      "probability_ci_95": [
+        -0.0024102113963865115,
+        0.0016129032258064516
+      ]
+    },
+    {
+      "budget": 32,
+      "view": "oculo",
+      "model": "source_scaled_anchor",
+      "reference": "source_scaled_two_head_oracle",
+      "delta_auroc": -0.00021578523882671345,
+      "ci_95": [
+        -0.0018909553068539246,
+        0.0014410979445541644
+      ],
+      "probability_delta_auroc": -0.00021578523882671345,
+      "probability_ci_95": [
+        -0.0018909553068539246,
+        0.0014410979445541644
+      ]
+    },
+    {
+      "budget": 32,
+      "view": "erdes",
+      "model": "direct_probability",
+      "reference": null,
+      "auroc": 0.7687445746527778,
+      "ci_95": [
+        0.7085191514756942,
+        0.8244656032986107
+      ],
+      "probability_auroc": 0.7687445746527778,
+      "probability_ci_95": [
+        0.7085191514756942,
+        0.8244656032986107
+      ]
+    },
+    {
+      "budget": 32,
+      "view": "erdes",
+      "model": "legacy_anchor",
+      "reference": null,
+      "auroc": 0.8216435185185185,
+      "ci_95": [
+        0.7702884024160878,
+        0.8689347330729165
+      ],
+      "probability_auroc": 0.8216435185185185,
+      "probability_ci_95": [
+        0.7702884024160878,
+        0.8689347330729165
+      ]
+    },
+    {
+      "budget": 32,
+      "view": "erdes",
+      "model": "source_scaled_anchor",
+      "reference": null,
+      "auroc": 0.8177879050925927,
+      "ci_95": [
+        0.7663744665075228,
+        0.8655408166956016
+      ],
+      "probability_auroc": 0.8177879050925927,
+      "probability_ci_95": [
+        0.7663744665075228,
+        0.8655408166956016
+      ]
+    }
+  ]
+}

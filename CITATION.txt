@@ -1,0 +1,12 @@
+Oculo–ERDES feature-scaling analysis: code and computed data
+Computational supplement to: Feature Scaling and Source Retention in Few-Shot Adaptation of Ocular Ultrasound Classifiers
+Version: 1.0.0
+Release date: 2026-11-06
+Repository maintainer/publisher: turkerbdonmez (GitHub account)
+Repository: https://github.com/turkerbdonmez/oculo-feature-scaling
+Versioned release: https://github.com/turkerbdonmez/oculo-feature-scaling/releases/tag/v1.0.0
+DOI: none assigned
+
+This record identifies the software/data release and repository maintainer.
+It does not assert the manuscript's final author list. Please cite the versioned
+release URL and retain the upstream Oculo/ERDES attributions in DATA_ATTRIBUTION.md.

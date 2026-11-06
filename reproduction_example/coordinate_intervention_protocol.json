@@ -1,0 +1,13 @@
+{
+  "status": "Specified before running this follow-up. Coordinate 177 was identified in the earlier retrospective analysis. All evaluation cases and the base fit had already been inspected.",
+  "seed": 44,
+  "label_budget": 8,
+  "draw_id": 13,
+  "C": 0.3,
+  "alpha": 0.25,
+  "coordinate_index_zero_based": 177,
+  "floor_fraction": 0.01,
+  "intervention": "Replace only draw scale at coordinate 177 by sqrt(max(v_target[177], 0.01 * v_source[177])). All other scales and all target means remain exactly as in the original draw scaler. Refit the same weighted logistic model and interpolate with the unchanged frozen source affine head.",
+  "evaluation": "Report both observed grouped test AUROCs from raw logits, with target-only scores and raw coefficient diagnostics. Do not use any result for a configuration choice.",
+  "scope": "Post hoc single-fit ablation on previously inspected public data. It can support a contribution of coordinate 177 in this run, but cannot establish an exclusive cause or generalized source preservation."
+}

@@ -1,0 +1,202 @@
+{
+  "arms": {
+    "usfm": {
+      "oculo": {
+        "32": {
+          "mean_run_auroc": {
+            "anchored": 0.8711762124204521,
+            "target_only": 0.5974105771340794,
+            "source_logit_pool": 0.8958196181698486
+          },
+          "paired_95pct": {
+            "source_logit_pool": {
+              "n": 245,
+              "baseline": 0.8958196181698486,
+              "candidate": 0.8711762124204521,
+              "delta": -0.02464340574939653,
+              "ci_95": [
+                -0.04541666666666664,
+                -0.008303982883476004
+              ]
+            }
+          }
+        }
+      },
+      "erdes": {
+        "32": {
+          "mean_run_auroc": {
+            "anchored": 0.7134223090277778,
+            "target_only": 0.7392415364583333,
+            "source_logit_pool": 0.6272786458333334,
+            "source_probability_pool": 0.6229654947916666
+          }
+        }
+      }
+    },
+    "usfm_source_fixed": {
+      "oculo": {
+        "32": {
+          "mean_run_auroc": {
+            "anchored": 0.8733048057932851,
+            "target_only": 0.5626947553214834,
+            "source_logit_pool": 0.8958196181698486
+          },
+          "paired_95pct": {
+            "source_logit_pool": {
+              "n": 245,
+              "baseline": 0.8958196181698486,
+              "candidate": 0.8733048057932851,
+              "delta": -0.02251481237656353,
+              "ci_95": [
+                -0.0402567478604345,
+                -0.0078113342111038086
+              ]
+            }
+          }
+        }
+      },
+      "erdes": {
+        "32": {
+          "mean_run_auroc": {
+            "anchored": 0.7162163628472222,
+            "target_only": 0.741015625,
+            "source_logit_pool": 0.6272786458333334,
+            "source_probability_pool": 0.6229654947916666
+          }
+        }
+      }
+    },
+    "convnext_tiny": {
+      "oculo": {
+        "32": {
+          "mean_run_auroc": {
+            "anchored": 0.949835418038183,
+            "target_only": 0.6944481018213737,
+            "source_logit_pool": 0.9578670177748518
+          },
+          "paired_95pct": {
+            "source_logit_pool": {
+              "n": 245,
+              "baseline": 0.9578670177748518,
+              "candidate": 0.949835418038183,
+              "delta": -0.008031599736668862,
+              "ci_95": [
+                -0.020715657230634166,
+                0.002490947992100064
+              ]
+            }
+          }
+        }
+      },
+      "erdes": {
+        "32": {
+          "mean_run_auroc": {
+            "anchored": 0.7111436631944444,
+            "target_only": 0.749951171875,
+            "source_logit_pool": 0.58544921875,
+            "source_probability_pool": 0.5885416666666666
+          }
+        }
+      }
+    },
+    "convnext_tiny_source_fixed": {
+      "oculo": {
+        "32": {
+          "mean_run_auroc": {
+            "anchored": 0.9504059688391485,
+            "target_only": 0.6879635725257846,
+            "source_logit_pool": 0.9578670177748518
+          },
+          "paired_95pct": {
+            "source_logit_pool": {
+              "n": 245,
+              "baseline": 0.9578670177748518,
+              "candidate": 0.9504059688391485,
+              "delta": -0.007461048935703314,
+              "ci_95": [
+                -0.019487052885670403,
+                0.0024906736888303683
+              ]
+            }
+          }
+        }
+      },
+      "erdes": {
+        "32": {
+          "mean_run_auroc": {
+            "anchored": 0.716650390625,
+            "target_only": 0.7533908420138888,
+            "source_logit_pool": 0.58544921875,
+            "source_probability_pool": 0.5885416666666666
+          }
+        }
+      }
+    },
+    "resnet18_imagenet": {
+      "oculo": {
+        "32": {
+          "mean_run_auroc": {
+            "anchored": 0.9011191573403555,
+            "target_only": 0.5247531270572745,
+            "source_logit_pool": 0.9210006583278473
+          },
+          "paired_95pct": {
+            "source_logit_pool": {
+              "n": 245,
+              "baseline": 0.9210006583278473,
+              "candidate": 0.9011191573403555,
+              "delta": -0.019881500987491772,
+              "ci_95": [
+                -0.04002715602369981,
+                -0.0002951503181918127
+              ]
+            }
+          }
+        }
+      },
+      "erdes": {
+        "32": {
+          "mean_run_auroc": {
+            "anchored": 0.820849609375,
+            "target_only": 0.809375,
+            "source_logit_pool": 0.7482096354166666,
+            "source_probability_pool": 0.7425944010416666
+          }
+        }
+      }
+    },
+    "resnet18_imagenet_source_fixed": {
+      "oculo": {
+        "32": {
+          "mean_run_auroc": {
+            "anchored": 0.9167654158437568,
+            "target_only": 0.5092604783849023,
+            "source_logit_pool": 0.9210006583278473
+          },
+          "paired_95pct": {
+            "source_logit_pool": {
+              "n": 245,
+              "baseline": 0.9210006583278473,
+              "candidate": 0.9167654158437568,
+              "delta": -0.00423524248409041,
+              "ci_95": [
+                -0.017917763879745453,
+                0.011334485407066055
+              ]
+            }
+          }
+        }
+      },
+      "erdes": {
+        "32": {
+          "mean_run_auroc": {
+            "anchored": 0.8177029079861111,
+            "target_only": 0.7946234809027778,
+            "source_logit_pool": 0.7482096354166666,
+            "source_probability_pool": 0.7425944010416666
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+# Source data attribution and fixture clearance
+
+The source releases use different Creative Commons terms.
+
+- **Oculo.** Sankara Eye Hospital, Oculo Dataset, release revision `306ba5d2901e520efdff11f46b561a84a3623c84`, under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The study uses released ocular B-scan images and annotations. The companion article is by Sneha Kumari, Payal Shah, Vaibhav Ganatra, Meenakshi Mahesh and Mohit Jain. [Pinned dataset release](https://huggingface.co/datasets/SankaraEyeHospital/Oculo/tree/306ba5d2901e520efdff11f46b561a84a3623c84) · [Companion article](https://doi.org/10.1007/978-3-032-38470-6_20)
+- **ERDES.** Yasemin Ozkut, Pouyan Navard, Srikar Adhikari, Elaine Situ-LaCasse, Josie Acuña, Adrienne Yarnish and Alper Yilmaz, *ERDES: A Benchmark Video Dataset for Retinal Detachment and Macular Status Classification in Ocular Ultrasound*, Zenodo version 1, under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The study uses released clip labels and sampled ocular-ultrasound frames. [Dataset record](https://doi.org/10.5281/zenodo.18644370) · [Repository license metadata](https://zenodo.org/api/records/18644370)
+
+The fixture includes frozen embeddings derived from these released samples, associated release IDs, and selected release labels. The analysis uses crop/resize on Oculo images, sampled frame features averaged per ERDES clip, and the grouped study partitions. The reference archive includes fitted affine coefficients, scaling moments, and raw predictions. The case IDs are identifiers from the dataset releases. No source pixels, videos, review clips, patient-linkage keys, encoder checkpoints, or third-party weights are included.
+
+The contributors apply [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) to their rights in the derived fixture and reference arrays. This follows the Oculo ShareAlike condition and preserves the separate ERDES CC BY 4.0 attribution and notice. ERDES source material remains under its original CC BY 4.0 terms. CC BY 4.0 Section 3(a)(4) permits an adapter's license that allows compliance with the original terms. CC BY-SA 4.0 Section 3(b) permits the same-version ShareAlike license for adapted material. [CC BY 4.0 legal code](https://creativecommons.org/licenses/by/4.0/legalcode.en#s3a) · [CC BY-SA 4.0 legal code](https://creativecommons.org/licenses/by-sa/4.0/legalcode.en#s3b)
+
+The score-reanalysis projection additionally contains ordered predictions, binary labels and an ME+ mask without case identifiers; its upstream-provenance file records the source-array hashes. These derived numerical inputs use the same contributed-material license.
+
+The fixture license applies to the rights described in [LICENSE-DATA.md](LICENSE-DATA.md). Patent and trademark rights and other separate third-party rights are outside the Creative Commons grants. The MIT notice applies to original Python code only.

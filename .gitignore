@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+reproduced_failure/
+reproduced_tables/
+round2_reproduced/

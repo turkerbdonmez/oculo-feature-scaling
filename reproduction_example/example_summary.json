@@ -1,0 +1,249 @@
+{
+  "seed": 44,
+  "budget": 8,
+  "draw": 13,
+  "C": 0.3,
+  "alpha": 0.25,
+  "support_ids": [
+    "825315_00085",
+    "825315_00608",
+    "825315_00308",
+    "825315_00234",
+    "405744_00100",
+    "405744_00078",
+    "755384_00094",
+    "405744_00032"
+  ],
+  "source_training_n": 1187,
+  "software": {
+    "python": "3.12.12",
+    "numpy": "2.3.5",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.7.2"
+  },
+  "direct": {
+    "oculo": {
+      "raw_auroc": 0.9846938775510203,
+      "legacy_sigmoid_auroc": 0.9846938775510203,
+      "sigmoid_exact_one": 0
+    },
+    "erdes": {
+      "raw_auroc": 0.7801920572916666,
+      "legacy_sigmoid_auroc": 0.7801920572916666,
+      "sigmoid_exact_one": 0
+    }
+  },
+  "variants": {
+    "draw": {
+      "converged": true,
+      "iterations": 17,
+      "coordinate_177_sd": 0.0001774284100223763,
+      "coordinate_177_standardized_coefficient": 0.02425876960400774,
+      "coordinate_177_raw_coefficient": 136.72426868362487,
+      "coordinate_177_fraction_of_squared_target_slope": 0.9985064827350008,
+      "target_slope_norm": 136.82648322017846,
+      "domains": {
+        "oculo": {
+          "target": {
+            "raw_auroc": 0.1792297564186965,
+            "legacy_sigmoid_auroc": 0.2925444371296906,
+            "sigmoid_exact_one": 229
+          },
+          "anchor": {
+            "raw_auroc": 0.37755102040816324,
+            "legacy_sigmoid_auroc": 0.37615207373271886,
+            "sigmoid_exact_one": 20
+          }
+        },
+        "erdes": {
+          "target": {
+            "raw_auroc": 0.7446289062500001,
+            "legacy_sigmoid_auroc": 0.7448323567708334,
+            "sigmoid_exact_one": 6
+          },
+          "anchor": {
+            "raw_auroc": 0.7898763020833334,
+            "legacy_sigmoid_auroc": 0.7898763020833334,
+            "sigmoid_exact_one": 0
+          }
+        }
+      }
+    },
+    "source": {
+      "converged": true,
+      "iterations": 33,
+      "coordinate_177_sd": 0.37377901313268347,
+      "coordinate_177_standardized_coefficient": 1.6285194061357977e-05,
+      "coordinate_177_raw_coefficient": 4.356904344326332e-05,
+      "coordinate_177_fraction_of_squared_target_slope": 8.906098297305937e-10,
+      "target_slope_norm": 1.4599375639585346,
+      "domains": {
+        "oculo": {
+          "target": {
+            "raw_auroc": 0.9843647136273865,
+            "legacy_sigmoid_auroc": 0.9843647136273865,
+            "sigmoid_exact_one": 0
+          },
+          "anchor": {
+            "raw_auroc": 0.9850230414746544,
+            "legacy_sigmoid_auroc": 0.9850230414746544,
+            "sigmoid_exact_one": 0
+          }
+        },
+        "erdes": {
+          "target": {
+            "raw_auroc": 0.7226562500000001,
+            "legacy_sigmoid_auroc": 0.7226562500000001,
+            "sigmoid_exact_one": 0
+          },
+          "anchor": {
+            "raw_auroc": 0.7921549479166667,
+            "legacy_sigmoid_auroc": 0.7921549479166667,
+            "sigmoid_exact_one": 0
+          }
+        }
+      }
+    },
+    "floor_0.001": {
+      "converged": true,
+      "iterations": 17,
+      "coordinate_177_sd": 0.011819930230692683,
+      "coordinate_177_standardized_coefficient": 0.00036946755920690935,
+      "coordinate_177_raw_coefficient": 0.03125801523324706,
+      "coordinate_177_fraction_of_squared_target_slope": 3.489195151289723e-05,
+      "target_slope_norm": 5.291743296800518,
+      "domains": {
+        "oculo": {
+          "target": {
+            "raw_auroc": 0.9865042791310072,
+            "legacy_sigmoid_auroc": 0.9865042791310072,
+            "sigmoid_exact_one": 0
+          },
+          "anchor": {
+            "raw_auroc": 0.9866688610928243,
+            "legacy_sigmoid_auroc": 0.9866688610928243,
+            "sigmoid_exact_one": 0
+          }
+        },
+        "erdes": {
+          "target": {
+            "raw_auroc": 0.7288411458333333,
+            "legacy_sigmoid_auroc": 0.7288411458333333,
+            "sigmoid_exact_one": 0
+          },
+          "anchor": {
+            "raw_auroc": 0.7876790364583333,
+            "legacy_sigmoid_auroc": 0.7876790364583333,
+            "sigmoid_exact_one": 0
+          }
+        }
+      }
+    },
+    "floor_0.01": {
+      "converged": true,
+      "iterations": 17,
+      "coordinate_177_sd": 0.03737790131326835,
+      "coordinate_177_standardized_coefficient": 0.0001168225297014446,
+      "coordinate_177_raw_coefficient": 0.003125443794244679,
+      "coordinate_177_fraction_of_squared_target_slope": 9.12038235118294e-07,
+      "target_slope_norm": 3.272692268685158,
+      "domains": {
+        "oculo": {
+          "target": {
+            "raw_auroc": 0.9858459512837393,
+            "legacy_sigmoid_auroc": 0.9858459512837393,
+            "sigmoid_exact_one": 0
+          },
+          "anchor": {
+            "raw_auroc": 0.9861751152073733,
+            "legacy_sigmoid_auroc": 0.9861751152073733,
+            "sigmoid_exact_one": 0
+          }
+        },
+        "erdes": {
+          "target": {
+            "raw_auroc": 0.7402343750000001,
+            "legacy_sigmoid_auroc": 0.7402343750000001,
+            "sigmoid_exact_one": 0
+          },
+          "anchor": {
+            "raw_auroc": 0.7880859375,
+            "legacy_sigmoid_auroc": 0.7880859375,
+            "sigmoid_exact_one": 0
+          }
+        }
+      }
+    },
+    "floor_0.1": {
+      "converged": true,
+      "iterations": 14,
+      "coordinate_177_sd": 0.11819930230692682,
+      "coordinate_177_standardized_coefficient": 3.838483407618932e-05,
+      "coordinate_177_raw_coefficient": 0.00032474670600437085,
+      "coordinate_177_fraction_of_squared_target_slope": 2.072154294858563e-08,
+      "target_slope_norm": 2.2559720225566435,
+      "domains": {
+        "oculo": {
+          "target": {
+            "raw_auroc": 0.9846938775510203,
+            "legacy_sigmoid_auroc": 0.9846938775510203,
+            "sigmoid_exact_one": 0
+          },
+          "anchor": {
+            "raw_auroc": 0.9861751152073733,
+            "legacy_sigmoid_auroc": 0.9861751152073733,
+            "sigmoid_exact_one": 0
+          }
+        },
+        "erdes": {
+          "target": {
+            "raw_auroc": 0.73779296875,
+            "legacy_sigmoid_auroc": 0.73779296875,
+            "sigmoid_exact_one": 0
+          },
+          "anchor": {
+            "raw_auroc": 0.7906087239583334,
+            "legacy_sigmoid_auroc": 0.7906087239583334,
+            "sigmoid_exact_one": 0
+          }
+        }
+      }
+    },
+    "coordinate_177_only": {
+      "converged": true,
+      "iterations": 17,
+      "coordinate_177_sd": 0.03737790131326835,
+      "coordinate_177_standardized_coefficient": 0.00011683624784557472,
+      "coordinate_177_raw_coefficient": 0.0031258108064002076,
+      "coordinate_177_fraction_of_squared_target_slope": 3.489335289104927e-07,
+      "target_slope_norm": 5.291652748117519,
+      "domains": {
+        "oculo": {
+          "target": {
+            "raw_auroc": 0.9865042791310072,
+            "legacy_sigmoid_auroc": 0.9865042791310072,
+            "sigmoid_exact_one": 0
+          },
+          "anchor": {
+            "raw_auroc": 0.9866688610928243,
+            "legacy_sigmoid_auroc": 0.9866688610928243,
+            "sigmoid_exact_one": 0
+          }
+        },
+        "erdes": {
+          "target": {
+            "raw_auroc": 0.728515625,
+            "legacy_sigmoid_auroc": 0.728515625,
+            "sigmoid_exact_one": 0
+          },
+          "anchor": {
+            "raw_auroc": 0.7877604166666666,
+            "legacy_sigmoid_auroc": 0.7877604166666666,
+            "sigmoid_exact_one": 0
+          }
+        }
+      }
+    }
+  },
+  "heldout_scope": "Single historical failure and fixed scaler interventions on already inspected tests"
+}

@@ -1,0 +1,84 @@
+{
+  "artifact_version": "1.0.0",
+  "scope": "Single historical failure and fixed scaler interventions on already inspected tests",
+  "seed": 44,
+  "budget": 8,
+  "draw": 13,
+  "C": 0.3,
+  "alpha": 0.25,
+  "variants": [
+    "draw",
+    "source",
+    "floor_0.001",
+    "floor_0.01",
+    "floor_0.1"
+  ],
+  "datasets": {
+    "oculo": {
+      "url": "https://huggingface.co/datasets/SankaraEyeHospital/Oculo",
+      "revision": "306ba5d2901e520efdff11f46b561a84a3623c84",
+      "license": "CC BY-SA 4.0"
+    },
+    "erdes": {
+      "url": "https://doi.org/10.5281/zenodo.18644370",
+      "license": "CC BY 4.0"
+    }
+  },
+  "fixture_description": "Frozen 512-dimensional representations from the seed 44 grouped Oculo ResNet-18 refit. ERDES features average the original three support or five test frame embeddings. Release case IDs and binary labels only. No pixels, video or model checkpoint included.",
+  "feature_and_encoder_provenance": {
+    "checkpoint": "results/publication_audit/oculo_refit_44/best.pt",
+    "checkpoint_sha256": "1517e63ad1bfcaa7d3fa2f4b25c6b5c31adcee7a59260c862b509fc6f3b1de94",
+    "cache": "results/publication_audit/features_67e58e38c262.npz",
+    "cache_sha256": "af85897ed0eb77de4b546ffa43eef5c40e5aae6ec1b86698859fe5c6de93227a",
+    "cache_identity": "67e58e38c262f27f2784871e09744c3d086f4acf60e785f98e841cf6c6e484bf",
+    "summary_sha256": "64ff765aaf3d70d031a1b99f3bd81f7595e898945d24c18abb14b8fab74b1af9"
+  },
+  "upstream_sha256": {
+    "revision_round1/linear/cached_results/run_index.csv": "d2324d1de00be48540c548e2b39b8b2c0b1b095de8d9852302a5e2c4a6bcd71e",
+    "revision_round1/linear/cached_results/test_ranking_scores.npz": "3bf4c7ef8b7ca502efd7f14abedf92ab7d7adaab80aa8930ae2eaa77fd83aeee",
+    "revision_round1/linear/cached_results/fit_diagnostics.csv": "e64c3ba0a58966d4bd720394bb0248a6ec0934bcc8e4fa1d9c787085bf64d5dc",
+    "revision_round1/linear/cached_results/fit_slopes.npz": "3d0f52a55a48a966d49ef223f8c413f51221c4870cf996a884f7a140c6239b67",
+    "revision_round1/linear/cached_results/seed44_draw13_arrays.npz": "f6e619397628d7296be837fb1aef99d9e744a703a1204faa4ec137fd09c48778",
+    "manuscript_preparation/data/target_label_draws.csv": "e62ef387d5d03ef1747b0db94eb38c79752ef56f798fb5e2311c7c3654da88ab",
+    "manuscript_preparation/data/oculo_test_index.csv": "efaa8bbfc77d045d4f3bcd61b8ad69d46cd6ff0716bc5c3239c9e8c55e77b964",
+    "manuscript_preparation/data/erdes_test_index.csv": "c7ed8aa1ca4c0ca2352b34ddd114fe95fa55657f73d18795420cb921fab9ce5a"
+  },
+  "archived_row_indices": {
+    "direct": 18493,
+    "draw": {
+      "fit_id": 3434,
+      "anchor": 18508,
+      "target": 18511
+    },
+    "source": {
+      "fit_id": 3438,
+      "anchor": 18539,
+      "target": 18542
+    },
+    "floor_0.001": {
+      "fit_id": 3442,
+      "anchor": 18564,
+      "target": 18567
+    },
+    "floor_0.01": {
+      "fit_id": 3446,
+      "anchor": 18588,
+      "target": 18591
+    },
+    "floor_0.1": {
+      "fit_id": 3450,
+      "anchor": 18612,
+      "target": 18615
+    }
+  },
+  "python": "3.12.12",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.7.2"
+  },
+  "files_sha256": {
+    "fixture.npz": "006be95695eca14e191b9407d51d92c1e4033d0243bac8d014c8b9ddf7d57d3b",
+    "reference_outputs.npz": "7e88f971fc2c94a9b1fb257a4c41f10b4441a1d2f6a49ef4c669f69ee87d25d8"
+  }
+}

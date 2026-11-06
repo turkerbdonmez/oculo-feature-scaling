@@ -1,0 +1,29 @@
+{
+  "protocol_sha256": "a98748b0f89291f4449f6823ca48509bfe16495656103ba30b02d4a12583e272",
+  "inputs_sha256": {
+    "linear/run_index.csv": "d2324d1de00be48540c548e2b39b8b2c0b1b095de8d9852302a5e2c4a6bcd71e",
+    "linear/test_ranking_scores.npz": "3bf4c7ef8b7ca502efd7f14abedf92ab7d7adaab80aa8930ae2eaa77fd83aeee",
+    "linear/test_scores.npz": "33d1d1f10211e91214699d17e4e8c0e8ea941b36a0b01b8b80558ec8802da37d",
+    "linear/summary_metrics.csv": "a879ffdd82957907cdce0557162e84285af7d56a8cf6a58824e991f82152176d",
+    "linear/oculo_cases.csv": "efaa8bbfc77d045d4f3bcd61b8ad69d46cd6ff0716bc5c3239c9e8c55e77b964",
+    "linear/erdes_cases.csv": "c7ed8aa1ca4c0ca2352b34ddd114fe95fa55657f73d18795420cb921fab9ce5a",
+    "linear/focal_auroc_intervals.json": "6b73f1032bcfae72fe1f61273cb64b72b6f3c879f385489d66d9599c30c13d48",
+    "case_indexes/oculo_test_index.csv": "efaa8bbfc77d045d4f3bcd61b8ad69d46cd6ff0716bc5c3239c9e8c55e77b964",
+    "case_indexes/erdes_test_index.csv": "c7ed8aa1ca4c0ca2352b34ddd114fe95fa55657f73d18795420cb921fab9ce5a",
+    "modern_sensitivity_results.json": "8d833f13828d1029283d36b08e455340c2ab04a27877d455c57a3c4d60764c4e"
+  },
+  "expected_output_sha256": {
+    "brier.csv": "ea5c75d87afc077199fbc7c9252a03e3d153a14d31b3ae70cb460b828a930bf6",
+    "low_budget_auroc.csv": "406024080f8e714888c0650b5f54330ef40e48092a3b1a49138588b9021e0654",
+    "me_positive_auroc.csv": "8a040c63690449f69892c262e79232487154d30a1e7d1dabc93f83a41a829577",
+    "modern_32.csv": "2503d746bb3909a3f978fe475b3fc70b4cbdf21799654d76fd94ddf77b75f98b",
+    "stability.csv": "5174bc928c9d8edbbd575e5f82addecd21518d61385ab155f92aafc6c630678d",
+    "tab_round2_brier.tex": "1e13a4b731b625897742abd1a7394cea8908f3a34c141329ce2f231e1ea58631",
+    "tab_round2_floors.tex": "aa12ee428d4b57c43417affd940f0bb05184f4e887ea2d108066988f06afe6c6",
+    "tab_round2_low_budget.tex": "79fc7714ab84290346c0f1fd3fe4c9db95b7c6067202824caa657a37395fc761",
+    "tab_round2_me_positive.tex": "4cfce0be101189bdbf7639a7f9c77eae377f9a18c213de6390bde3ecacfdbbc8",
+    "tab_round2_minima.tex": "92518945538ebe67cf0ebbec3123b3b31c026e04e30f0afa96085a195c0b204e",
+    "tab_round2_modern_32.tex": "b79b6fd793f0f4b438fdb9645c8110e7032e728ab6a00cf5595ff149fba55dd6",
+    "results.json": "39beca9817b23d4be140ba449ec2dc101eb8a0afe80931e83c1c9202010d646e"
+  }
+}

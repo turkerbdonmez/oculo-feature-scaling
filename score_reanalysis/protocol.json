@@ -1,0 +1,113 @@
+{
+  "stage": "Round 2 fixed score reanalysis, specified before generating these outputs",
+  "status": "Retrospective exploratory analyses of previously inspected public tests. No new fitting, model selection, floor selection or threshold selection.",
+  "linear_inputs": "Round 1 run index, ordered case CSVs, raw score NPZ and probability score NPZ. Reported conditions use fixed C=0.3 and interpolation alpha=0.25. The 32-label unanchored comparator uses alpha=1.",
+  "test_sets": {
+    "oculo": {
+      "cases": 245,
+      "rd": 28,
+      "non_rd": 217
+    },
+    "oculo_me_positive": {
+      "cases": 51,
+      "rd": 28,
+      "non_rd": 23
+    },
+    "erdes": {
+      "clips": 224,
+      "rd": 96,
+      "pvd": 128
+    }
+  },
+  "fixed_contrasts": {
+    "low_budget_auroc": {
+      "budgets": [
+        8,
+        16
+      ],
+      "views": [
+        "oculo",
+        "erdes"
+      ],
+      "design": "balanced",
+      "candidates": [
+        "floor_0.01",
+        "source"
+      ],
+      "reference": "draw-fitted original anchor"
+    },
+    "me_positive_auroc": {
+      "budgets": [
+        8,
+        16,
+        32
+      ],
+      "views": [
+        "oculo_me_positive"
+      ],
+      "design": "balanced",
+      "candidates": [
+        "floor_0.01",
+        "source"
+      ],
+      "references": [
+        "frozen source head",
+        "draw-fitted original anchor"
+      ]
+    },
+    "brier": {
+      "budgets": [
+        32
+      ],
+      "views": [
+        "oculo",
+        "erdes"
+      ],
+      "design": "balanced",
+      "candidate": "draw-fitted original anchor",
+      "references": [
+        "frozen source head or historical direct ERDES mean-frame-probability score",
+        "matched target-only head"
+      ]
+    }
+  },
+  "stability": {
+    "budgets": [
+      8,
+      16,
+      32
+    ],
+    "balanced_scalers": [
+      "draw",
+      "floor_0.001",
+      "floor_0.01",
+      "floor_0.1",
+      "source"
+    ],
+    "unstratified_scalers_available": [
+      "draw",
+      "floor_0.01",
+      "source"
+    ],
+    "metrics": [
+      "mean Oculo AUROC",
+      "mean ERDES AUROC",
+      "minimum Oculo AUROC",
+      "count Oculo AUROC < 0.50",
+      "count Oculo AUROC drop > 0.02 from its seed-matched frozen source head"
+    ],
+    "reporting": "All fit outcomes retained. Counts use 45 correlated runs per design and condition, from three fixed source encoder fits and 15 shared draws. The eight- and 16-label main stability view lists both designs. Floor sensitivity reports every balanced condition; 0.1% and 10% floors were not fit on unstratified draws."
+  },
+  "ranking": "AUROC uses archived raw decision scores with half-credit for ties. Historical direct ERDES probability aggregation is used only as the Brier source reference. Reported Brier uses archived probability scores and a negative candidate-minus-reference difference favors the candidate.",
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 20261105,
+    "percentiles": [
+      0.025,
+      0.975
+    ],
+    "algorithm": "Matched percentile bootstrap with one set of positive-case, negative-case, and draw weights per replicate, generated in that order. Apply the same weights to both models; average three fixed encoder fits before resampling. AUROC uses pairwise concordance. Brier uses case-level squared probability errors and preserves observed class prevalence by weighting each resampled class by its observed fraction. The same reference is repeated on matched draws when it does not depend on their labels.",
+    "limitations": "Exploratory unadjusted intervals conditional on the archived test cases, support-draw generation and fixed encoders. No patient clustering estimate, multiplicity correction, or retention noninferiority margin. ME+ is a small post hoc subgroup."
+  },
+  "modern_32": "Transcribe existing raw-score Round 1 point estimates and paired intervals for USFM, ConvNeXt-Tiny and frozen ImageNet ResNet-18, original versus source-fixed scales. Compare each adapted Oculo result with the same encoder's frozen source head. Each alternative representation uses one checkpoint and 15 shared draws. The primary Oculo-fine-tuned ResNet-18 is shown alongside as a separate descriptive reference using the archived 32-label linear point estimates and intervals. Its source-fixed reference on Oculo is the unchanged source head of the matched router."
+}
